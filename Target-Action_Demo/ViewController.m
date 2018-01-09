@@ -25,6 +25,8 @@
     btn.titleLabel.font = [UIFont systemFontOfSize:15];
     btn.layer.cornerRadius = 7;
     btn.layer.masksToBounds = YES;
+    btn.layer.borderWidth = 0.5;
+    btn.layer.borderColor = [UIColor blackColor].CGColor;
     [btn addTarget:self action:@selector(action:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     
